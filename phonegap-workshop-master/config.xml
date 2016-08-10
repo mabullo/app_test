@@ -1,19 +1,23 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<widget id="io.cordova.hellocordova" version="0.0.1" android-versionCode="0.1.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-
-
-<!-- versionCode is optional and Android only -->
-
-  <name>PhoneGap Example</name>
-
-  <description>
-      Il mio test con phonegap
-  </description>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="org.myapp.sample" version="1.0.0">
+  <name>appSample</name>
+  <description>Hello World sample application that responds to the deviceready event.</description>
 
   <author href="https://ifustiveneti.beer" email="support@phonegap.com">
       Marco Bullo
   </author>
 
   <icon src="icon.png" width="180" height="180" />
-
+  <content src="index.html"/>
+  <preference name="DisallowOverscroll" value="true"/>
+  <preference name="android-minSdkVersion" value="14"/>
+  <access origin="*"/>
+  <allow-intent href="http://*/*"/>
+  <allow-intent href="https://*/*"/>
+  <allow-intent href="tel:*"/>
+  <allow-intent href="sms:*"/>
+  <allow-intent href="mailto:*"/>
+  <allow-intent href="geo:*"/>
+  <platform name="android">
+    <allow-intent href="market:*"/>
+  </platform>
 </widget>
